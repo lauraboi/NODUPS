@@ -115,51 +115,70 @@ def grafo_DOT(name, outfichero, GOs, color):
     for nodo in name.nodes(data=True):
         if nodo[1]["frec"] <= rango1:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/1" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' \
+                       + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/1" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/1" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/1" % (color))
         elif nodo[1]["frec"] <= rango2:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/2" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/2" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/2" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/2" % (color))
         elif nodo[1]["frec"] <= rango3:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/3" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       tr(round(nodo[1]["frec"], 2)), fillcolor="/%s/3" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/3" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/3" % (color))
         elif nodo[1]["frec"] <= rango4:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/4" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/4" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/4" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/4" % (color))
         elif nodo[1]["frec"] <= rango5:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/5" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/5" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/5" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/5" % (color))
         elif nodo[1]["frec"] <= rango6:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/6" % (color), shape="diamond")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/6" % (color), shape="diamond")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/6" % (color))
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/6" % (color))
         elif nodo[1]["frec"] <= rango7:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/7" % (color), shape="diamond", fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/7" % (color), shape="diamond", fontcolor="white")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/7" % (color), fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/7" % (color), fontcolor="white")
         elif nodo[1]["frec"] <= rango8:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/8" % (color), shape="diamond", fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/8" % (color), shape="diamond", fontcolor="white")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/8" % (color), fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/8" % (color), fontcolor="white")
         elif nodo[1]["frec"] <= rango9:
             if nodo[0] in GOs:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/9" % (color), shape="diamond", fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       str(round(nodo[1]["frec"], 2)), fillcolor="/%s/9" % (color), shape="diamond", fontcolor="white")
             else:
-                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="/%s/9" % (color), fontcolor="white")
+                g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                       tr(round(nodo[1]["frec"], 2)), fillcolor="/%s/9" % (color), fontcolor="white")
         else:
-            g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + str(round(nodo[1]["frec"], 2)), fillcolor="red")
+            g.node(nodo[0].replace(":", "_"), label= nodo[0] + '\n' + id_to_name[nodo[0]].replace(" ", "\ ") + '\n' + \
+                   str(round(nodo[1]["frec"], 2)), fillcolor="red")
 
     # Definimos los ejes
     for edge in name.edges(keys=True):
